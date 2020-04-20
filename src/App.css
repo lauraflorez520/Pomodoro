@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 90vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+body {
+  background-image: url(https://isorepublic.com/wp-content/uploads/2018/11/0069-1-1100x734.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ /* background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(144,23,48,1) 100%);
+*/}
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.interval-container {
+  display: flex;
+  margin: 0 40px;
+  align-items: center;
+}
+
+.interval-length-container {
+  display: flex;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 0 10px;
+  height: 25px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  outline: none;
+  cursor: pointer;
+  color: black;
+  width: 70px;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+
+.interval-length {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.timer-container {
+  border: 2px dashed white;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+  padding: 10px;
+  text-align: center;
+  width: 250px;
+}
+
+.timer {
+  font-size: 2.5rem;
+}
+.timer-actions {
+  margin-top: 20px;
+  text-align: center;
 }
